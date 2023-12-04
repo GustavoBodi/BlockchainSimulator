@@ -1,1 +1,0 @@
-/bin/c++ CMakeFiles/project.dir/src/BlockHeader.cpp.o CMakeFiles/project.dir/src/Hash.cpp.o CMakeFiles/project.dir/src/main.cpp.o -o project  /usr/lib/libssl.so /usr/lib/libcrypto.so 
