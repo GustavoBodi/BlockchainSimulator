@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Hash_8h" kind="file" language="C++">
+    <compoundname>Hash.h</compoundname>
+    <includes local="no">openssl/evp.h</includes>
+    <includedby refid="BlockHeader_8hpp" local="yes">include/BlockHeader.hpp</includedby>
+    <includedby refid="HashGenerator_8hpp" local="yes">include/HashGenerator.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/Hash.h</label>
+        <link refid="Hash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>openssl/evp.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/Block.hpp</label>
+        <link refid="Block_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/BlockHeader.hpp</label>
+        <link refid="BlockHeader_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/Blockchain.hpp</label>
+        <link refid="Blockchain_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/Hash.h</label>
+        <link refid="Hash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/HashGenerator.hpp</label>
+        <link refid="HashGenerator_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classHash" prot="public">Hash</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;openssl/evp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classHash" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHash" kindref="compound">Hash</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>hashValue[EVP_MAX_MD_SIZE];</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><ref refid="classHash" kindref="compound">Hash</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><ref refid="classHash" kindref="compound">~Hash</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>&amp;hash);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>&amp;hash);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><ref refid="classHash" kindref="compound">Hash</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>&amp;hash);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/Hash.h"/>
+  </compounddef>
+</doxygen>

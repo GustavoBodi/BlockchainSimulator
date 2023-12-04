@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Block_8hpp" kind="file" language="C++">
+    <compoundname>Block.hpp</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">optional</includes>
+    <includes refid="BlockHeader_8hpp" local="yes">BlockHeader.hpp</includes>
+    <includes refid="Transaction_8hpp" local="yes">Transaction.hpp</includes>
+    <includedby refid="Blockchain_8hpp" local="yes">include/Blockchain.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/Block.hpp</label>
+        <link refid="Block_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>BlockHeader.hpp</label>
+        <link refid="BlockHeader_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Hash.hpp</label>
+        <link refid="Hash_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Transaction.hpp</label>
+        <link refid="Transaction_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="7">
+        <label>openssl/evp.h</label>
+      </node>
+      <node id="3">
+        <label>optional</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/Block.hpp</label>
+        <link refid="Block_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/Blockchain.hpp</label>
+        <link refid="Blockchain_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classBlock" prot="public">Block</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;BlockHeader.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Transaction.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;u</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">64_t<sp/>size&gt;</highlight></codeline>
+<codeline lineno="11" refid="classBlock" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBlock" kindref="compound">Block</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classBlock_1a436a7c077d93fd7b3c478d743a3c9420" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBlock_1a436a7c077d93fd7b3c478d743a3c9420" kindref="member">Block</ref>(<ref refid="classBlock" kindref="compound">Block</ref><sp/>&amp;lastBlock);</highlight></codeline>
+<codeline lineno="19" refid="classBlock_1aa5b12b131bad4b80f37f14bd05e598d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBlock_1aa5b12b131bad4b80f37f14bd05e598d7" kindref="member">Block</ref>();</highlight></codeline>
+<codeline lineno="24" refid="classBlock_1a3ea281cbac0579ceee789c8c4ec5437e" refkind="member"><highlight class="normal"><sp/><sp/>std::optional&lt;uint64_t&gt;<sp/><ref refid="classBlock_1a3ea281cbac0579ceee789c8c4ec5437e" kindref="member">addTransaction</ref>(<ref refid="classTransaction" kindref="compound">Transaction</ref><sp/>&amp;&amp;transaction);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classBlock" kindref="compound">~Block</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="classBlockHeader" kindref="compound">BlockHeader</ref><sp/>blockHeader;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>std::array&lt;Transaction,<sp/>size&gt;<sp/>transactions;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/Block.hpp"/>
+  </compounddef>
+</doxygen>

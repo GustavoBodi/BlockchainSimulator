@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="HashGenerator_8hpp" kind="file" language="C++">
+    <compoundname>HashGenerator.hpp</compoundname>
+    <includes local="no">openssl/evp.h</includes>
+    <includes local="yes">Hash.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/HashGenerator.hpp</label>
+        <link refid="HashGenerator_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Hash.h</label>
+      </node>
+      <node id="2">
+        <label>openssl/evp.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classHashGenerator" prot="public">HashGenerator</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;openssl/evp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Hash.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classHashGenerator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHashGenerator" kindref="compound">HashGenerator</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><ref refid="classHashGenerator" kindref="compound">HashGenerator</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>A&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>generateSha512(A<sp/>&amp;info_to_hash);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><ref refid="classHashGenerator" kindref="compound">~HashGenerator</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/HashGenerator.hpp"/>
+  </compounddef>
+</doxygen>

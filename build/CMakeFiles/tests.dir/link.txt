@@ -1,0 +1,1 @@
+/bin/c++ CMakeFiles/tests.dir/src/BlockHeader.cpp.o CMakeFiles/tests.dir/src/Hash.cpp.o CMakeFiles/tests.dir/src/main.cpp.o -o tests  /usr/lib/libssl.so /usr/lib/libcrypto.so -lCatch2 /usr/lib64/libCatch2Main.a /usr/lib64/libCatch2.a 

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Hash_8hpp" kind="file" language="C++">
+    <compoundname>Hash.hpp</compoundname>
+    <includes local="no">openssl/evp.h</includes>
+    <includes local="no">cstdint</includes>
+    <includedby refid="BlockHeader_8hpp" local="yes">include/BlockHeader.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/Hash.hpp</label>
+        <link refid="Hash_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="2">
+        <label>openssl/evp.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/Block.hpp</label>
+        <link refid="Block_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/BlockHeader.hpp</label>
+        <link refid="BlockHeader_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/Blockchain.hpp</label>
+        <link refid="Blockchain_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/Hash.hpp</label>
+        <link refid="Hash_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classHash" prot="public">Hash</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;openssl/evp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*!<sp/>@brief<sp/>Encapsulation<sp/>of<sp/>an<sp/>openssl<sp/>generated<sp/>Hash</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classHash" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHash" kindref="compound">Hash</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="classHash_1ab37037ae2fc099f05d6f395a0c7425eb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classHash_1ab37037ae2fc099f05d6f395a0c7425eb" kindref="member">Hash</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><ref refid="classHash" kindref="compound">~Hash</ref>();</highlight></codeline>
+<codeline lineno="17" refid="classHash_1a6ece7aa6c9e7ba46abaec2ccb476d041" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classHash_1a6ece7aa6c9e7ba46abaec2ccb476d041" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>&amp;hash);</highlight></codeline>
+<codeline lineno="20" refid="classHash_1a812ac703e407b0e820913e62046b41ea" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classHash_1a812ac703e407b0e820913e62046b41ea" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>&amp;hash);</highlight></codeline>
+<codeline lineno="23" refid="classHash_1a4d42f47d78fa9b5ce4878e67a357ffa4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classHash" kindref="compound">Hash</ref>&amp;<sp/><ref refid="classHash_1a4d42f47d78fa9b5ce4878e67a357ffa4" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classHash" kindref="compound">Hash</ref><sp/>&amp;hash);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>uint8_t<sp/>hashValue[EVP_MAX_MD_SIZE];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/Hash.hpp"/>
+  </compounddef>
+</doxygen>
